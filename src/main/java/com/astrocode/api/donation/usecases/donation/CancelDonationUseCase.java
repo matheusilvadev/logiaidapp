@@ -23,6 +23,6 @@ public class CancelDonationUseCase {
 
         final var canceledDonation = donation.cancel();
 
-        return canceledDonation.cancel();
+        return donationRepository.save(canceledDonation);
     }
 }
