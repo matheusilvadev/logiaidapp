@@ -28,4 +28,9 @@ public class DonationUseCasesException extends RuntimeException {
         return new DonationUseCasesException(msg);
     }
 
+    public static DonationUseCasesException notOwner(String usecase, UUID donationId, UUID donorId){
+        String msg = "- %s - The donor with beneficiaryId: %s is not the donor responsible for the donation: %s".formatted(usecase, donorId, donationId);
+        return new DonationUseCasesException(msg);
+    }
+
 }

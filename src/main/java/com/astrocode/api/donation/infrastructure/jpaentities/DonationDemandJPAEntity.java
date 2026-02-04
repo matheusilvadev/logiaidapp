@@ -144,7 +144,7 @@ public class DonationDemandJPAEntity implements Serializable {
     @Override
     public String toString() {
         return "DonationDemandJPAEntity{" +
-                "id=" + id +
+                "beneficiaryId=" + id +
                 ", beneficiaryId=" + beneficiaryId +
                 ", donorId=" + donorId +
                 ", demandStatus=" + demandStatus +

@@ -123,7 +123,7 @@ public class DonationJPAEntity implements Serializable {
     @Override
     public String toString() {
         return "DonationJPAEntity{" +
-                "id=" + id +
+                "beneficiaryId=" + id +
                 ", demandId=" + demandId +
                 ", donorId=" + donorId +
                 ", transporterId=" + transporterId +

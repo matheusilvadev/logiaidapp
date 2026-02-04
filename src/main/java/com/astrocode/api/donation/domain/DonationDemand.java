@@ -40,7 +40,7 @@ public class DonationDemand {
                            Instant fulfilledAt,
                            Instant canceledAt){
 
-        this.id = Objects.requireNonNull(id, "id cannot be null");
+        this.id = Objects.requireNonNull(id, "beneficiaryId cannot be null");
         this.beneficiaryId = Objects.requireNonNull(beneficiaryId, "beneficiaryId cannot be null");
         this.donorId = donorId;
         this.demandStatus = Objects.requireNonNull(demandStatus, "status cannot be null");
@@ -232,7 +232,7 @@ public class DonationDemand {
     @Override
     public String toString() {
         return "DonationDemand{" +
-                "id=" + id +
+                "beneficiaryId=" + id +
                 ", beneficiaryId=" + beneficiaryId +
                 ", donorId=" + donorId +
                 ", demandStatus=" + demandStatus +

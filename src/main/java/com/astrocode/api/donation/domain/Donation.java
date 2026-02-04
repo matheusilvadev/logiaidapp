@@ -34,7 +34,7 @@ public class Donation {
                      Instant deliveredAt,
                      Instant canceledAt) {
 
-        this.id = Objects.requireNonNull(id, "id cannot be null");
+        this.id = Objects.requireNonNull(id, "beneficiaryId cannot be null");
         this.demandId = Objects.requireNonNull(demandId, "demandId cannot be null");
         this.donorId = Objects.requireNonNull(donorId, "donorId cannot be null");
         this.transporterId = transporterId;
@@ -200,7 +200,7 @@ public class Donation {
                 ", updatedAt=" + updatedAt +
                 ", deliveredAt=" + deliveredAt +
                 ", canceledAt=" + canceledAt +
-                ", id=" + id +
+                ", beneficiaryId=" + id +
                 '}';
     }
 }
